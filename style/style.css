@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.main{
+    min-height: 100vh;
+    background-image: radial-gradient(circle at center center, rgb(143, 39, 176) 0%, rgb(143, 39, 176) 11%,rgb(128, 38, 169) 11%, rgb(128, 38, 169) 13%,rgb(113, 38, 163) 13%, rgb(113, 38, 163) 17%,rgb(98, 37, 156) 17%, rgb(98, 37, 156) 28%,rgb(83, 37, 150) 28%, rgb(83, 37, 150) 40%,rgb(68, 36, 143) 40%, rgb(68, 36, 143) 72%,rgb(53, 36, 137) 72%, rgb(53, 36, 137) 81%,rgb(38, 35, 130) 81%, rgb(38, 35, 130) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    min-width: 300px;
+    width: 500px;
+    padding: 50px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+input[type='number']{
+    margin-top: 30px;
+    width: 70px;
+    padding: 10px;
+    font-size: 20px;
+    border: none !important;
+    text-align: center;
+}
+button.guess-btn{
+    margin-top: 30px;
+    padding: 5px 15px;
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+}
+p{
+    margin-top: 10px;
+}
+p:nth-of-type(1){
+    margin-top: 30px;
+}
+button.restart{
+    margin-top: 30px;
+    padding: 5px 15px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrong{
+    box-shadow: 3px 3px 20px 1px red;
+}
+.success{
+    box-shadow: 3px 3px 20px 1px aquamarine;
+}
+.warning{
+    color:  red;
+    background-color: #fff;
+    padding: 3px 5px;
+}
+.good{
+    color: aqua;
+}
